@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UFCScoring")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e9c07692213ccfd6b1be8e8c295da4631319c9c")]
 [assembly: System.Reflection.AssemblyProductAttribute("UFCScoring")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UFCScoring")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
