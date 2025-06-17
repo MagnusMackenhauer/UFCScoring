@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/Magnus/Desktop/UFCScoring/UFCScoring/obj/Debug/net8.0/scopedcss/projectbundle/UFCScoring.bundle.scp.css",
+      "PackagePath": "staticwebassets/UFCScoring.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/Magnus/Desktop/UFCScoring/UFCScoring/wwwroot/Assets/dog.jpeg",
+      "PackagePath": "staticwebassets/Assets/dog.jpeg"
+    },
+    {
+      "Id": "/Users/Magnus/Desktop/UFCScoring/UFCScoring/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "/Users/Magnus/Desktop/UFCScoring/UFCScoring/wwwroot/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/Magnus/Desktop/UFCScoring/UFCScoring/wwwroot/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/Magnus/Desktop/UFCScoring/UFCScoring/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.UFCScoring.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.UFCScoring.props",
+      "PackagePath": "build\\UFCScoring.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.UFCScoring.props",
+      "PackagePath": "buildMultiTargeting\\UFCScoring.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.UFCScoring.props",
+      "PackagePath": "buildTransitive\\UFCScoring.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

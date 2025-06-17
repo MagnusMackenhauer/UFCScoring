@@ -1,0 +1,8 @@
+.background-container[b-68e0jplw75] {
+    background-image: url("Assets/dog.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh; 
+    padding: 20px;
+}

@@ -1,0 +1,50 @@
+@page "/scores"
+@using UFCScoring.Models
+@inject HttpClient Http
+@rendermode InteractiveServer
+
+<h3>Indsendte Scores</h3>
+
+@if (scores is null)
+{
+    <p>Henter data...</p>
+}
+else if (!scores.Any())
+{
+    <p>Ingen scores endnu.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Fight ID</th>
+            <th>Runde</th>
+            <th>Fighter 1</th>
+            <th>Fighter 2</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var score in scores)
+        {
+            <tr>
+                <td>@score.FightId</td>
+                <td>@score.Round</td>
+                <td>@score.Fighter1Score</td>
+                <td>@score.Fighter2Score</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Score>? scores;
+
+    protected override async Task OnInitializedAsync()
+    {
+        scores = await Http.GetFromJsonAsync<List<Score>>("api/scores");
+
+    }
+}
+

@@ -1,0 +1,49 @@
+.main-header[b-1lpji2raud] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 10px 40px;
+    border-bottom: 1px solid #333;
+}
+
+.logo-title[b-1lpji2raud] {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo[b-1lpji2raud] {
+    height: 40px;
+    width: 40px;
+}
+
+.site-title[b-1lpji2raud] {
+    font-size: 1.8rem;
+    color: white;
+    margin: 0;
+}
+
+.navbar ul[b-1lpji2raud] {
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li[b-1lpji2raud] {
+    display: inline;
+}
+
+.nav-item[b-1lpji2raud] {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-item:hover[b-1lpji2raud] {
+    color: #0af; /* blå highlight på hover */
+}
+

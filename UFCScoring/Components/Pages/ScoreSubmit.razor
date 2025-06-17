@@ -1,0 +1,52 @@
+@page "/submit"
+@rendermode InteractiveServer
+@using UFCScoring.Models
+@inject HttpClient Http
+
+
+<h3>Indsend Score</h3>
+
+<div>
+    <label>Fight ID:</label>
+    <input @bind="score.FightId" class="form-control" />
+
+    <label>Runde:</label>
+    <input type="number" @bind="score.Round" class="form-control" />
+
+    <label>Fighter 1 Score:</label>
+    <input type="number" @bind="score.Fighter1Score" class="form-control" />
+
+    <label>Fighter 2 Score:</label>
+    <input type="number" @bind="score.Fighter2Score" class="form-control" />
+
+    <button class="btn btn-primary mt-2" @onclick="SubmitScore">Send</button>
+</div>
+
+@if (!string.IsNullOrEmpty(responseMessage))
+{
+    <p class="text-success">@responseMessage</p>
+}
+
+@code {
+    private Score score = new();
+    private string? responseMessage;
+    
+    private async Task SubmitScore()
+    {
+        Console.WriteLine("Knappen blev klikket"); // ← vises i output
+
+        var response = await Http.PostAsJsonAsync("api/scores", score);
+        if (response.IsSuccessStatusCode)
+        {
+            responseMessage = "Score sendt!";
+            score = new();
+        }
+        else
+        {
+            responseMessage = $"Fejl: {response.StatusCode}";
+        }
+    }
+
+}
+
+
